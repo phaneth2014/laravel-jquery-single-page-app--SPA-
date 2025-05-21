@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>laravel jquery spa</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="{{ asset('assets/js/progressbar.min.js') }}"></script>
 </head>
 <body>
     @include("components.header-menu")
-    <div id="content">
-
-    </div>
-    <div class="navigate-loader"></div>
+    <div id="content"></div>
 </body>
 </html>
