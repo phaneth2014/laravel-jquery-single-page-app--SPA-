@@ -1,0 +1,25 @@
+** JQuery Single Page Application (SPA) ****
+
+** create new project **
+	->Laravel new laravel-jquery-spa
+	
+	->none
+	
+	->sqlite
+	
+	->build ->yes
+	
+** install jquery by npm **
+	npm install jquery --save
+
+** 2. Include jQuery in resources/js/app.js Edit your resources/js/app.js file to import jQuery **
+
+	import $ from 'jquery';
+	window.$ = $;
+	window.jQuery = $;
+	
+** vite configure on main layout page **
+
+	->@vite(['resources/css/app.css', 'resources/js/app.js'])
+
+https://github.com/phaneth2014/laravel-jquery-single-page-app--SPA-.git

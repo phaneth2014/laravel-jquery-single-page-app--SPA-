@@ -17,8 +17,8 @@
             $('.navigate-loader').show();
             linkInActive();
             a.classList.add('active');
-            navigatePage(a.getAttribute('components'));
             history.pushState(null,null,a.href);
+            navigatePage(a.getAttribute('components'));
         })
     })
 
@@ -34,4 +34,12 @@
             a.classList.remove('active');
         });
     }
+
+    // Handle the popstate event to detect changes in the browsing history
+	window.addEventListener("popstate", function(event) {
+    // Update the content based on the state object
+        $('.navigate-loader').show();
+    	navigatePage(location.pathname + '/navigate');
+	});
+
 </script>
