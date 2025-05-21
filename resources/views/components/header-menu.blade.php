@@ -14,7 +14,6 @@
     document.querySelectorAll('[components]').forEach((a)=>{
         a.addEventListener('click', function(e){
             e.preventDefault();
-            $('.navigate-loader').show();
             linkInActive();
             a.classList.add('active');
             history.pushState(null,null,a.href);
@@ -38,7 +37,6 @@
     // Handle the popstate event to detect changes in the browsing history
 	window.addEventListener("popstate", function(event) {
     // Update the content based on the state object
-        $('.navigate-loader').show();
     	navigatePage(location.pathname + '/navigate');
 	});
 
