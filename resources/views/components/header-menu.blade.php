@@ -24,7 +24,6 @@
     function navigatePage(component){
        $.get(component, function(data){
             $('#content').empty().append(data);
-            $('.navigate-loader').hide();
        });
     }
 

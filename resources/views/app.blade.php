@@ -10,9 +10,6 @@
 </head>
 <body>
     @include("components.header-menu")
-    <div id="content">
-
-    </div>
-    <div class="navigate-loader"></div>
+    <div id="content"></div>
 </body>
 </html>
