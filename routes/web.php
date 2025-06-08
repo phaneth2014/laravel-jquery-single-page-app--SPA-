@@ -5,7 +5,7 @@ use App\Http\Controllers\NavigateController;
 
 // default route
 Route::get('/{any?}', function () {
-    return view('app');
+    return view('dashboard');
 });
 
 // navigation route
